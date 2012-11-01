@@ -1,0 +1,27 @@
+/* Scaladb Default Variables */
+
+/* Bootstrap Overrides */
+
+$btnPrimaryBackground:                lighten(#000, 7%) !default;
+$btnPrimaryBackgroundHighlight:       #000 !default;
+$inputBorderRadius:                   5px !default;
+$navbarLinkBackgroundActive:          #000;
+$grayLight:                           #bbb;
+
+$navbarCollapseWidth:                 500px !default;
+$navbarInverseSearchBackground:       #fff;
+$navbarInverseSearchBorder:           #000;
+$navbarInverseSearchPlaceholderColor: #777;
+$navbarInverseSearchBackgroundFocus:  #eee;
+
+//$linkColor: $logo-color !default;
+//$linkColorHover: darken($logo-color, 10%) !default;
+
+// Typography
+// -------------------------
+$sansFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily: Georgia, "Times New Roman", Times, serif !default;
+$altFontFamily: $serifFontFamily !default;
+
+$headingsFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$headingsFontWeight: normal !default;
