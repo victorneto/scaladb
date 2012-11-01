@@ -1,0 +1,253 @@
+pt-BR:
+  #gerais
+  empty: "Não temos %{collection} ainda."
+  confirm: Tem certeza?
+  edit: Editar
+  show: Visualizar
+  update: "Atualizar %{model}"
+  destroy: Apagar
+  cancel: cancelar
+  back: Voltar
+  list_all: mostrar todos
+  new: "Criar %{model}"
+  error_message_header: "%{count} erro(s) impede(m) este(a) %{model} de ser gravado(a):"
+  email_receive_fail: "Email digitado é inválido. Por favor verifique e tente novamente."
+  email_receive_success: "Email %{email} cadastrado com sucesso. Obrigado."
+  contact_sent: "Agradecemos sua mensagem e em breve retornaremos."
+  remember_me: "Lembrar"
+  password: "Senha"
+  password_confirmation: "Confirmação da Senha"
+  created_at: "Criada em"
+  updated_at: "Atualizada em"
+  sign_in_count: "Acessos"
+  last_sign_in_at: "Último Acesso em"
+  helpers:
+   submit:
+     create: "Cadastrar %{model}"
+     update: "Atualizar %{model}"
+  #controllers do projeto
+  users: "Usuários"
+  
+  create_success: "Cadastro realizado com sucesso!"
+  update_success: "Atualização realizada com sucesso!"
+  destroy_success: "Excluído com sucesso!"
+  
+  next: "Próximo"
+  previous: "Anterior"
+  #paperclip
+  must_be_set: "deve ser enviado obrigatoriamente"
+  exceed_size: "é maior do que o limite permitido"
+  different_format: "não é permitido"
+        
+  # formatos de data e hora
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+    
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    order: [:day, :month, :year]
+  
+  time:
+    formats:
+      default: "%A, %d de %B de %Y, %H:%M h"
+      short: "%d/%m, %H:%M h"
+      medium: "%d/%m/%y, %H:%M"
+      long: "%A, %d de %B de %Y, %H:%M h"
+      month_and_year: "%B de %Y"
+    am: ''
+    pm: ''
+  
+  # distância do tempo em palavras
+  datetime:
+    distance_in_words:
+      half_a_minute: 'meio minuto'
+      less_than_x_seconds:
+        one: 'menos de 1 segundo'
+        other: 'menos de %{count} segundos'
+      
+      x_seconds:
+        one: '1 segundo'
+        other: '%{count} segundos'
+      
+      less_than_x_minutes:
+        one: 'menos de um minuto'
+        other: 'menos de %{count} minutos'
+      
+      x_minutes:
+        one: '1 minuto'
+        other: '%{count} minutos'
+      
+      about_x_hours:
+        one: 'aproximadamente 1 hora'
+        other: 'aproximadamente %{count} horas'
+      
+      x_days:
+        one: '1 dia'
+        other: '%{count} dias'
+      
+      about_x_months:
+        one: 'aproximadamente 1 mês'
+        other: 'aproximadamente %{count} meses'
+      
+      x_months:
+        one: '1 mês'
+        other: '%{count} meses'
+      
+      about_x_years:
+        one: 'aproximadamente 1 ano'
+        other: 'aproximadamente %{count} anos'
+      
+      over_x_years:
+        one: 'mais de 1 ano'
+        other: 'mais de %{count} anos'
+
+      almost_x_years:
+        one: 'quase 1 ano'
+        other: 'quase %{count} anos'
+    
+    prompts:
+      year:   "Ano"
+      month:  "Mês"
+      day:    "Dia"
+      hour:   "Hora"
+      minute: "Minuto"
+      second: "Segundos"
+
+  # numeros
+  number:
+    format:
+      precision: 3
+      separator: ','
+      delimiter: '.'
+    currency:
+      format:
+        unit: 'R$'
+        precision: 2
+        format: '%u %n'
+        separator: ','
+        delimiter: '.'
+    percentage:
+      format:
+        delimiter: '.'
+    precision:
+      format:
+        delimiter: '.'
+    human:
+      format:
+        precision: 2
+        delimiter: '.'
+        significant: true
+        strip_unsignificant_zeros: true
+      # number_to_human_size()
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      # number_to_human()
+      # new in rails 3: please add to other locales
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""     
+          thousand: "mil"
+          million:
+            one: milhão
+            other: milhões
+          billion:
+            one: bilhão
+            other: bilhões
+          trillion:
+            one: trilhão
+            other: trilhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+
+  # Usado no Array.to_sentence
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " e "
+      last_word_connector: " e "
+    
+  # ActiveRecord
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "Não foi possível gravar %{model}: 1 erro"
+          other: "Não foi possível gravar %{model}: %{count} erros."
+        body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      messages:
+        inclusion: "não está incluído na lista"
+        exclusion: "não está disponível"
+        invalid: "não é válido"
+        confirmation: "não está de acordo com a confirmação"
+        accepted: "deve ser aceito"
+        empty: "não pode ficar vazio"
+        blank: "não pode ficar em branco"
+        too_long: "é muito longo (máximo: %{count} caracteres)"
+        too_short: "é muito curto (mínimo: %{count} caracteres)"
+        wrong_length: "não possui o tamanho esperado (%{count} caracteres)"
+        taken: "já está em uso"
+        not_a_number: "não é um número"
+        not_an_integer: "não é um número inteiro"
+        greater_than: "deve ser maior do que %{count}"
+        greater_than_or_equal_to: "deve ser maior ou igual a %{count}"
+        equal_to: "deve ser igual a %{count}"
+        less_than: "deve ser menor do que %{count}"
+        less_than_or_equal_to: "deve ser menor ou igual a %{count}"
+        odd: "deve ser ímpar"
+        even: "deve ser par"
+        record_invalid: "A validação falhou: %{errors}"
+        
+    models:
+      user:
+        one: "Usuário"
+        other: "Usuários"
+
+    attributes:
+      user:
+        email: "Email"
+        password: "Senha"
+        password_confirmation: "Confirmação da Senha"
+        current_password: "Senha Atual"
+        name: "Nome"
+        cpf: "CPF"
+        remember_me: "Lembrar"
+        role: "Permissões"
+      role:
+        name: "Nome"
+        description: "Descrição"
+  
+  #paperclip
+  paperclip:
+    errors:
+      attachment:
+        size: "Tamanho (em bytes) inválido. Tamanho deve estar entre :min e :max (mb) "
+        content_type: "Tipo de conteúdo não permitido. Permitido apenas: "
+        presence: "Upload de arquivo obrigatório"
+  #kaminari
+  views:  
+      pagination:  
+        next: "Próxima"  
+        previous: "Anterior" 
+        first: "<<"
+        last: ">>" 
+        truncate: "&hellip;"
+  
+  #cancan
+  unauthorized:
+      manage:
+        all: "Você não tem permissão para acessar essa página."

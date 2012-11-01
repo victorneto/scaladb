@@ -1,0 +1,16 @@
+/.DS_Store
+/.bundle
+/db/*.sqlite3
+/log/*.log
+/tmp
+.sass-cache/
+config/initializers/mail_settings.rb
+config/database.yml
+public/system
+public/.DS_Store
+app/.DS_Store
+app/assets/.DS_Store
+app/assets/javascripts/.DS_Store
+vendor/assets/javascripts/.DS_Store
+public/assets
+*/.DS_Store
