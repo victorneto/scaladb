@@ -1,9 +1,10 @@
 %meta{:charset => "utf-8"}
 /[if IE]
   %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }
-%meta{:name => "viewport", :content => "width=device-width, initial-scale=1" }
+%meta{ :name => "viewport", :content => "width=device-width, initial-scale=1" }
 %title= content_for?(:title) ? yield(:title) : "Scala dB Acústica - Blumenau, SC"
-%meta{:content => content_for?(:description) ? yield(:description) : "Projetos e Laudos Acústicos", :name => "description" }
+%meta{ :content => content_for?(:description) ? yield(:description) : "Projetos e Laudos Acústicos", :name => "description" }
+%meta{ :name => "google-site-verification", :content => "kpzzaC9QICvh0pC3HeT0EmBVSB5uGaYmitwXWswS5uk" }
 /[if lt IE 9]
   %script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
 = stylesheet_link_tag "application", :media => "all"
