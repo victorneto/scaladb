@@ -1,16 +1,22 @@
 @import "scaladb_variables";
 @import "bootstrap";
+body { padding-top: 100px; }
 @import "font-awesome";
 @import "bootstrap-responsive";
 
 body {
-  padding-top: 30px;
-  padding-bottom: 380px;
-  background: #fff url(image-path("body-bg.png")) bottom left repeat-x;
+//  padding-bottom: 380px;
+//  background: #fff url(image-path("body-bg.png")) bottom left repeat-x;
 }
 
-img.logo {
-  margin-bottom: 20px;
+.navbar .nav > li > a {
+  padding: 25px 15px 10px;
+}
+
+// Navbar search
+// -------------------------
+.navbar-search {
+  @include navbarVerticalAlign(0);
 }
 
 .centered {

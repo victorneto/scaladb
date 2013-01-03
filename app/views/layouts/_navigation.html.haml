@@ -1,0 +1,19 @@
+.navbar.navbar-fixed-top
+  %nav.navbar-inner
+    .container
+      %button.btn.btn-navbar{ :"data-target" => ".nav-collapse", :"data-toggle" => "collapse", :type => "button" }
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to image_tag("logo-scala-db-acustica.png"), root_path, :class => "brand"
+      .nav-collapse.collapse
+        %ul.nav
+          %li= link_to "Empresa", root_path
+          %li= link_to "Projeto", root_path
+          %li= link_to "Consultoria", root_path
+          %li= link_to "Laudo", root_path
+          %li= link_to "Equipamentos", root_path
+          %li= link_to "Portfolio", root_path
+          %li= link_to "Contato", root_path
+        %form.navbar-search.pull-right
+          %input.search-query{ :type => "text", :placeholder => "Pesquisa interna" }

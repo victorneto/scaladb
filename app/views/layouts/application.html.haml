@@ -2,12 +2,12 @@
 %html{ :lang => "en" }
   %head
     = render "layouts/head"
-  %body
-    
+  %body(itemscope itemtype="http://schema.org/WebPage")
+    = render "layouts/navigation"
     .container
       .row
         .span12
           = yield
-  
-    = javascript_include_tag "application"
-    = javascript_include_tag "//apis.google.com/js/plusone.js"
+
+    = render "layouts/footer"
+    = render "layouts/javascript"

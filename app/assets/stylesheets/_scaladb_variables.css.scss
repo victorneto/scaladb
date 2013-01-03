@@ -1,27 +1,79 @@
-/* Scaladb Default Variables */
+// Grays
+// -------------------------
+$black:                 #000 !default;
+$grayDarker:            #222 !default;
+$grayDark:              #333 !default;
+$gray:                  #555 !default;
+$grayLight:             #999 !default;
+$grayLighter:           #eee !default;
+$white:                 #fff !default;
 
-/* Bootstrap Overrides */
+// Accent colors
+// -------------------------
+$blue:                  #049cdb !default;
+$blueDark:              #0064cd !default;
+$green:                 #46a546 !default;
+$red:                   #9d261d !default;
+$yellow:                #ffc40d !default;
+$orange:                #f89406 !default;
+$pink:                  #c3325f !default;
+$purple:                #7a43b6 !default;
 
-$btnPrimaryBackground:                lighten(#000, 7%) !default;
-$btnPrimaryBackgroundHighlight:       #000 !default;
-$inputBorderRadius:                   5px !default;
-$navbarLinkBackgroundActive:          #000;
-$grayLight:                           #bbb;
+// Scala dB Colors
+// -------------------------
 
-$navbarCollapseWidth:                 500px !default;
-$navbarInverseSearchBackground:       #fff;
-$navbarInverseSearchBorder:           #000;
-$navbarInverseSearchPlaceholderColor: #777;
-$navbarInverseSearchBackgroundFocus:  #eee;
+$mainColor:             #7f9400;
+$secondaryColor:        #db4646;
+$terciaryColor:         #d4d34d;
 
-//$linkColor: $logo-color !default;
-//$linkColorHover: darken($logo-color, 10%) !default;
+// Links
+// -------------------------
+$linkColor:             $secondaryColor !default;
+$linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
-$sansFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily: Georgia, "Times New Roman", Times, serif !default;
-$altFontFamily: $serifFontFamily !default;
+$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$baseFontSize:          14px !default;
+$baseFontFamily:        $sansFontFamily !default;
+$baseLineHeight:        20px !default;
+$altFontFamily:         $serifFontFamily !default;
+$headingsFontFamily:    "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$headingsFontWeight:    400 !default;
+$headingsColor:         inherit !default; // empty to use BS default, $textColor
 
-$headingsFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$headingsFontWeight: normal !default;
+// Navbar
+// -------------------------
+$navbarHeight:                    40px !default;
+$navbarBackgroundHighlight:       #ffffff !default;
+$navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
+$navbarBorder:                    darken($navbarBackground, 12%) !default;
+
+$navbarText:                      #777 !default;
+$navbarLinkColor:                 #777 !default;
+$navbarLinkColorHover:            $grayDark !default;
+$navbarLinkColorActive:           $gray !default;
+$navbarLinkBackgroundHover:       transparent !default;
+$navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
+
+// Buttons
+// -------------------------
+$btnBackground:                     $white !default;
+$btnBackgroundHighlight:            darken($white, 10%) !default;
+$btnBorder:                         #bbb !default;
+
+$btnPrimaryBackground:              $mainColor !default;
+$btnPrimaryBackgroundHighlight:     lighten($btnPrimaryBackground, 2%) !default;
+
+$btnInfoBackground:                 #5bc0de !default;
+$btnInfoBackgroundHighlight:        #2f96b4 !default;
+
+$btnSuccessBackground:              #62c462 !default;
+$btnSuccessBackgroundHighlight:     #51a351 !default;
+
+$btnWarningBackground:              lighten($orange, 15%) !default;
+$btnWarningBackgroundHighlight:     $orange !default;
+
+$btnDangerBackground:               #ee5f5b !default;
+$btnDangerBackgroundHighlight:      #bd362f !default;
