@@ -1,0 +1,14 @@
+@import "bootstrap/mixins";
+
+header {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  background: black url(image-path("header-bg.jpg")) repeat-x;
+  color: white;
+  .hero-unit {
+    margin-bottom: 0px;
+    padding: 20px 40px 30px 40px;
+    background: black;
+    @include translucent-background(black, 0.7);
+  }
+}

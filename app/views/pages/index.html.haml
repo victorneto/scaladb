@@ -1,8 +1,17 @@
-%p.centered= image_tag "logo-scala-db-acustica.png", :alt => "Logo Scala dB Acústica", :class => "logo"
-.hero-unit
-  %h1 Acústica de Edificações
-  %p A Acústica de Edificações objetiva adequar o isolamento e o tratamento acústico de forma global, com base em critérios definidos pelas normas técnicas e leis vigentes. O resultado visa proporcionar conforto e privacidade ao consumidor final além da otimização de recursos investidos pelo incorporador ou construtor.
+- content_for :header do
+  %header
+    .container
+      .row
+        .span7.offset5
+          .hero-unit.hero-header
+            %h1 Scala dB Acústica
+            %p.lead Consultoria e assessoria em acústica de edificações.
+            = link_to "Saiba Mais", root_path, :class => "btn btn-primary btn-large"
 
+.row-fluid.centered
+  %h1 O que é Acústica de Edificações?
+  %p.lead A Acústica de Edificações objetiva adequar o isolamento e o tratamento acústico de forma global, com base em critérios definidos pelas normas técnicas e leis vigentes. O resultado visa proporcionar conforto e privacidade ao consumidor final além da otimização de recursos investidos pelo incorporador ou construtor.
+  %hr
 .row-fluid
   %ul.thumbnails
     %li.span4

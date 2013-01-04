@@ -1,6 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400);
 @import "scaladb_variables";
 @import "bootstrap";
-body { padding-top: 100px; }
+body { padding-top: 80px; }
 @import "font-awesome";
 @import "bootstrap-responsive";
 
@@ -21,10 +22,6 @@ body {
 
 .centered {
   text-align: center;
-}
-
-.hero-unit {
-  padding: 20px 50px;
 }
 
 .thumbnail {

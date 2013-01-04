@@ -22,9 +22,9 @@ $purple:                #7a43b6 !default;
 // Scala dB Colors
 // -------------------------
 
-$mainColor:             #7f9400;
-$secondaryColor:        #db4646;
-$terciaryColor:         #d4d34d;
+$mainColor:             #7fb92b;
+$secondaryColor:        #005aa6;
+$terciaryColor:         #cc2925;
 
 // Links
 // -------------------------
@@ -34,12 +34,12 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 // Typography
 // -------------------------
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$serifFontFamily:       "Arvo", Georgia, "Times New Roman", Times, serif !default;
 $baseFontSize:          14px !default;
 $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        20px !default;
 $altFontFamily:         $serifFontFamily !default;
-$headingsFontFamily:    "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$headingsFontFamily:    "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $headingsFontWeight:    400 !default;
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 

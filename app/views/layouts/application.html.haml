@@ -4,6 +4,7 @@
     = render "layouts/head"
   %body(itemscope itemtype="http://schema.org/WebPage")
     = render "layouts/navigation"
+    = yield :header
     .container
       .row
         .span12
