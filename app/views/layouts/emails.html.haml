@@ -1,0 +1,40 @@
+!!! 5
+%html
+  %head
+    %meta{ :charset => "utf-8" }
+  %body{ :style => "background: #ffffff;" }
+    %table{ :style => "background: #dddddd;", :width => "550", :border => "0", :cellspacing => "0", :cellpadding => "0" }
+      %tr
+        %td{ :colspan => "5", :width => "550", :height => "30" }
+      %tr
+        %td{ :height => "70", :width => "50", :bgcolor => "#15284e" }
+        %td{ :height => "70", :width => "450", :bgcolor => "#15284e", :colspan => "3" }
+        %td{ :height => "70", :width => "50", :bgcolor => "#15284e" }
+      %tr
+        %td{ :colspan => "5", :width => "550", :height => "15" }
+      %tr
+        %td{ :width => "50" }
+        %td{ :colspan => "3", :width => "450", :height => "15" }
+          %div{ :style => "width: 450px; height: 15px; background: #ffffff; border-radius: 10px 10px 0 0;" }
+        %td{ :width => "50" }
+      %tr
+        %td{ :width => "50" }
+        %td{ :width => "50", :bgcolor => "#ffffff" }
+        %td{ :width => "350", :bgcolor => "#ffffff" }= yield
+        %td{ :width => "50", :bgcolor => "#ffffff" }
+        %td{ :width => "50" }
+      %tr
+        %td{ :width => "50" }
+        %td{ :colspan => "3", :width => "450", :height => "15" }
+          %div{ :style => "width: 450px; height: 15px; background: #ffffff; border-radius: 0 0 10px 10px;" }
+        %td{ :width => "50" }
+      %tr
+        %td{ :colspan => "5", :width => "550", :height => "5" }
+      %tr
+        %td{ :height => "50", :width => "50" }
+        %td{ :height => "50", :width => "50" }
+        %td{ :height => "50", :width => "350" }
+        %td{ :height => "50", :width => "50" }
+        %td{ :height => "50", :width => "50" }
+      %tr
+        %td{ :colspan => "5", :width => "550", :height => "20" }
