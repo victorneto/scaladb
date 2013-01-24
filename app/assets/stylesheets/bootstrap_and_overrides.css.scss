@@ -5,9 +5,12 @@ body { padding-top: 80px; }
 @import "font-awesome";
 @import "bootstrap-responsive";
 
-body {
-//  padding-bottom: 380px;
-//  background: #fff url(image-path("body-bg.png")) bottom left repeat-x;
+.block-wide {
+  padding: 15px 0 20px 0;
+  margin: 25px 0 45px 0;
+  background: #eaeff2;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .navbar .nav > li > a {
@@ -27,4 +30,14 @@ body {
 .thumbnail {
   background: #eee;
   padding: 5px 20px 20px 20px;
+}
+
+// Typography
+// -------------------------
+h1 {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+h2 {
+  font-size: 2em;
 }

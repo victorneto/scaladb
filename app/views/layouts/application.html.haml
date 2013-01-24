@@ -5,10 +5,7 @@
   %body(itemscope itemtype="http://schema.org/WebPage")
     = render "layouts/navigation"
     = yield :header
-    .container
-      .row
-        .span12
-          = yield
+    = yield
 
     = render "layouts/footer"
     = render "layouts/javascript"
