@@ -1,14 +1,19 @@
 %footer
   .container
     %hr
-    %ul.nav.nav-pills
-      %li= link_to "Home", root_path
-      %li= link_to "Empresa", empresa_path
-      %li= link_to "Acústica de Edificações", projetos_path
-      %li= link_to "Indústria", projetos_path
-      %li= link_to "Meio Ambiente", projetos_path
-      %li= link_to "Projetos", projetos_path
-      %li= link_to "Consultoria", consultoria_path
-      %li= link_to "Laudos", laudos_path
-      %li= link_to "Equipamentos", root_path
-      %li= link_to "Contato", contact_path
+    .row
+      .span9
+        %ul.nav.nav-pills
+          %li= link_to "Home", root_path
+          %li= link_to "Empresa", empresa_path
+          %li= link_to "Acústica de Edificações", acustica_de_edificacoes_path
+          %li= link_to "Indústria", root_path
+          %li= link_to "Meio Ambiente", root_path
+          %li= link_to "Projetos", projetos_path
+          %li= link_to "Consultoria", consultoria_path
+          %li= link_to "Laudos", laudos_path
+          %li= link_to "Equipamentos", root_path
+          %li= link_to "Contato", contact_path
+      .span3
+        %p.pull-right
+          %small Copyright &copy; #{Date.today.year} Scala dB Acústica

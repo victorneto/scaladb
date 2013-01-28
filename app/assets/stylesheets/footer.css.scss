@@ -4,4 +4,7 @@ footer {
   height: 470px;
   background: white url(image-path("footer-bg.png")) bottom center repeat-x;
   font-size: 0.85em;
+  small {
+    color: #ccc;
+  }
 }

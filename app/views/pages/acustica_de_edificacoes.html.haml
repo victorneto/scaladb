@@ -1,0 +1,51 @@
+- content_for :title do
+  Acústica de Edificações - Projetos, Consultoria e Laudos | Scala dB Acústica
+- content_for :header do
+  %header
+    .container
+      %h1 Acústica de Edificações
+
+.container
+  .row
+    .span12
+      .row-fluid
+        .span6
+          %h2 O que é Acústica de Edificações?
+          %p A Acústica de Edificações estuda e especifica as soluções tecnológicas aplicáveis para a adequação do isolamento sonoro e tratamento acústico no âmbito global de uma edificação, compatibilizando soluções arquitetônicas, estruturais dentre outras especialidades aos requisitos de conforto acústico e privacidade para sua edificação.
+          %p
+            Busca-se sempre a conformidade com os aspectos legais e normativos,
+            = link_to "entre em contato", contact_path
+            e solicite uma proposta para os serviços abaixo de acordo com a necessidade da sua edificação.
+        .span6
+          %div{ :style => "height: 250px; width: 100%; background: brown;" }
+.block-wide
+  .container
+    .row
+      .span12
+        .row-fluid
+          .span4
+            %h2
+              %i.icon-headphones
+              Projetos
+            %div{ :style => "height: 100px; width: 100%; background: lightgreen; margin-bottom: 10px;" }
+            %p
+              Para uma edificação atingir um desempenho acústico bem sucedido, o
+              %strong Projeto Acústico
+              é peça
+              %strong fundamental
+              e não deve ser entendido como um projeto de menor importância, destinado apenas para cumprir aspectos legais e normativos.
+            = link_to "Saiba Mais", projetos_path, :class => "btn btn-primary btn-small"
+          .span4
+            %h2
+              %i.icon-user
+              Consultoria
+            %div{ :style => "height: 100px; width: 100%; background: darkred; margin-bottom: 10px;" }
+            %p Estudo, diagnóstico e orientação das soluções acústicas aplicáveis para uma edificação, visando a otimização de recursos investidos por construtores, incorporadores etc.
+            = link_to "Saiba Mais", consultoria_path, :class => "btn btn-primary btn-small"
+          .span4
+            %h2
+              %i.icon-bar-chart
+              Laudos
+            %div{ :style => "height: 100px; width: 100%; background: navy; margin-bottom: 10px;" }
+            %p Relatório técnico de avaliação do desempenho acústico in situ (em campo) de sistemas construtivos, por meio de medições acústicas em fachadas, compartimentações verticais, pisos, equipamentos dentre outros.
+            = link_to "Saiba Mais", laudos_path, :class => "btn btn-primary btn-small"
