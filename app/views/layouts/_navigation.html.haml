@@ -14,26 +14,59 @@
               Acústica de Edificações
               %b.caret
             %ul.dropdown-menu
-              %li= link_to "Acústica de Edificações", acustica_de_edificacoes_path
-              %li= link_to "Projetos", projetos_path
-              %li= link_to "Consultoria", consultoria_path
-              %li= link_to "Laudos", laudos_path
+              %li
+                = link_to acustica_de_edificacoes_path do
+                  %i.icon-building
+                  Acústica de Edificações
+              %li.divider
+              %li
+                = link_to projetos_path do
+                  %i.icon-headphones
+                  Projetos
+              %li
+                = link_to consultoria_path do
+                  %i.icon-user
+                  Consultoria
+              %li
+                = link_to laudos_path do
+                  %i.icon-bar-chart
+                  Laudos
           %li.dropdown
             = link_to industria_path, :class => "dropdown-toggle", :"data-toggle" => "dropdown" do
               Indústria
               %b.caret
             %ul.dropdown-menu
-              %li= link_to "Indústria", industria_path
-              %li= link_to "Projetos", projetos_path
-              %li= link_to "Consultoria", consultoria_path
-              %li= link_to "Laudos", laudos_path
+              %li
+                = link_to industria_path do
+                  %i.icon-beaker
+                  Indústria
+              %li.divider
+              %li
+                = link_to projetos_path do
+                  %i.icon-headphones
+                  Projetos
+              %li
+                = link_to consultoria_path do
+                  %i.icon-user
+                  Consultoria
+              %li
+                = link_to laudos_path do
+                  %i.icon-bar-chart
+                  Laudos
           %li.dropdown
             = link_to root_path, :class => "dropdown-toggle", :"data-toggle" => "dropdown" do
               Meio Ambiente
               %b.caret
             %ul.dropdown-menu
-              %li= link_to "Meio Ambiente", meio_ambiente_path
-              %li= link_to "Laudos", laudos_path
+              %li
+                = link_to meio_ambiente_path do
+                  %i.icon-leaf
+                  Meio Ambiente
+              %li.divider
+              %li
+                = link_to laudos_path do
+                  %i.icon-bar-chart
+                  Laudos
           %li= link_to "Equipamentos", root_path
           %li= link_to "Contato", contact_path
         %form.navbar-search.pull-right
