@@ -9,11 +9,31 @@
       .nav-collapse.collapse
         %ul.nav
           %li= link_to "Empresa", empresa_path
-          %li= link_to "Projetos", projetos_path
-          %li= link_to "Consultoria", consultoria_path
-          %li= link_to "Laudos", laudos_path
+          %li.dropdown
+            = link_to projetos_path, :class => "dropdown-toggle", :"data-toggle" => "dropdown" do
+              Acústica de Edificações
+              %b.caret
+            %ul.dropdown-menu
+              %li= link_to "Projetos", projetos_path
+              %li= link_to "Consultoria", consultoria_path
+              %li= link_to "Laudos", laudos_path
+          %li.dropdown
+            = link_to root_path, :class => "dropdown-toggle", :"data-toggle" => "dropdown" do
+              Indústria
+              %b.caret
+            %ul.dropdown-menu
+              %li= link_to "Projetos", projetos_path
+              %li= link_to "Consultoria", consultoria_path
+              %li= link_to "Laudos", laudos_path
+          %li.dropdown
+            = link_to root_path, :class => "dropdown-toggle", :"data-toggle" => "dropdown" do
+              Meio Ambiente
+              %b.caret
+            %ul.dropdown-menu
+              %li= link_to "Laudos", laudos_path
           %li= link_to "Equipamentos", root_path
-          %li= link_to "Portfolio", root_path
           %li= link_to "Contato", contact_path
         %form.navbar-search.pull-right
           %input.search-query{ :type => "text", :placeholder => "Pesquisa interna" }
+          
+          
