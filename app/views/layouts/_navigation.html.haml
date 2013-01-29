@@ -20,37 +20,37 @@
                   Acústica de Edificações
               %li.divider
               %li
-                = link_to projetos_path do
+                = link_to acustica_de_edificacoes_projetos_path do
                   %i.icon-headphones
                   Projetos
               %li
-                = link_to consultoria_path do
+                = link_to acustica_de_edificacoes_consultoria_path do
                   %i.icon-user
                   Consultoria
               %li
-                = link_to laudos_path do
+                = link_to acustica_de_edificacoes_laudos_path do
                   %i.icon-bar-chart
                   Laudos
           %li.dropdown
-            = link_to industria_path, :class => "dropdown-toggle", :"data-toggle" => "dropdown" do
+            = link_to industrias_path, :class => "dropdown-toggle", :"data-toggle" => "dropdown" do
               Indústria
               %b.caret
             %ul.dropdown-menu
               %li
-                = link_to industria_path do
+                = link_to industrias_path do
                   %i.icon-beaker
                   Indústria
               %li.divider
               %li
-                = link_to projetos_path do
+                = link_to root_path do
                   %i.icon-headphones
                   Projetos
               %li
-                = link_to consultoria_path do
+                = link_to root_path do
                   %i.icon-user
                   Consultoria
               %li
-                = link_to laudos_path do
+                = link_to root_path do
                   %i.icon-bar-chart
                   Laudos
           %li.dropdown
@@ -59,17 +59,17 @@
               %b.caret
             %ul.dropdown-menu
               %li
-                = link_to meio_ambiente_path do
+                = link_to meio_ambientes_path do
                   %i.icon-leaf
                   Meio Ambiente
               %li.divider
               %li
-                = link_to laudos_path do
+                = link_to root_path do
                   %i.icon-bar-chart
                   Laudos
           %li= link_to "Equipamentos", root_path
           %li= link_to "Contato", contact_path
-        %form.navbar-search.pull-right
-          %input.search-query{ :type => "text", :placeholder => "Pesquisa interna" }
+        / %form.navbar-search.pull-right
+        /   %input.search-query{ :type => "text", :placeholder => "Pesquisa interna" }
           
           

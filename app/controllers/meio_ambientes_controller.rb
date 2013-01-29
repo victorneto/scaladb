@@ -1,0 +1,3 @@
+class MeioAmbientesController < ApplicationController
+
+end

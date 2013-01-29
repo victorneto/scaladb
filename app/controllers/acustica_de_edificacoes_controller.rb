@@ -1,0 +1,3 @@
+class AcusticaDeEdificacoesController < ApplicationController
+
+end

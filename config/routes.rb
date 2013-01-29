@@ -3,12 +3,13 @@ ScaladbComBr::Application.routes.draw do
   root :to => "pages#index"
 
   get "empresa" => "pages#empresa", :as => "empresa"
-  get "acustica-de-edificacoes" => "pages#acustica_de_edificacoes", :as => "acustica_de_edificacoes"
-  get "industria" => "pages#industria", :as => "industria"
-  get "meio-ambiente" => "pages#meio_ambiente", :as => "meio_ambiente"
-  get "projetos" => "pages#projetos", :as => "projetos"
-  get "consultoria" => "pages#consultoria", :as => "consultoria"
-  get "laudos" => "pages#laudos", :as => "laudos"
+  get "acustica-de-edificacoes" => "acustica_de_edificacoes#index", :as => "acustica_de_edificacoes"
+  get "acustica-de-edificacoes/projetos" => "acustica_de_edificacoes#projetos", :as => "acustica_de_edificacoes_projetos"
+  get "acustica-de-edificacoes/consultoria" => "acustica_de_edificacoes#consultoria", :as => "acustica_de_edificacoes_consultoria"
+  get "acustica-de-edificacoes/laudos" => "acustica_de_edificacoes#laudos", :as => "acustica_de_edificacoes_laudos"
+  get "industria" => "industrias#index", :as => "industrias"
+  get "meio-ambiente" => "meio_ambientes#index", :as => "meio_ambientes"
+
   get "contato" => "contacts#new", :as => "contact"
   resources :contacts, :only => [:create], :path => "contato/enviar"
 
