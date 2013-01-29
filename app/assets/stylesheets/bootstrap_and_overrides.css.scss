@@ -35,9 +35,18 @@ body { padding-top: 80px; }
 // Dropdown
 // -------------------------
 .dropdown-menu {
+  margin-top: -5px;
   min-width: 200px;
   @include border-radius(0);
 }
+
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+
+//a.menu:after, .dropdown-toggle:after {
+//  content: none;
+//}
 
 // Typography
 // -------------------------
