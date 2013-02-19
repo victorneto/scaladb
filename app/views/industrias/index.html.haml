@@ -12,7 +12,7 @@
         .span6
           %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         .span6
-          %div{ :style => "height: 250px; width: 100%; background: grey;" }
+          = image_tag "industria/industria.jpg", :alt => "Indústria", :class => "framed"
 .block-wide
   .container
     .row
@@ -22,7 +22,7 @@
             %h2
               %i.icon-headphones
               Projetos
-            %div{ :style => "height: 100px; width: 100%; background: lightgreen; margin-bottom: 10px;" }
+            = image_tag "industria/projetos.jpg", :alt => "Projetos", :class => "framed"
             %p
               Para uma edificação atingir um desempenho acústico bem sucedido, o
               %strong Projeto Acústico
@@ -34,13 +34,13 @@
             %h2
               %i.icon-user
               Consultoria
-            %div{ :style => "height: 100px; width: 100%; background: darkred; margin-bottom: 10px;" }
+            = image_tag "industria/consultoria.jpg", :alt => "Consultoria", :class => "framed"
             %p Estudo, diagnóstico e orientação das soluções acústicas aplicáveis para uma edificação, visando a otimização de recursos investidos por construtores, incorporadores etc.
             = link_to "Saiba Mais", root_path, :class => "btn btn-primary btn-small"
           .span4
             %h2
               %i.icon-bar-chart
               Laudos
-            %div{ :style => "height: 100px; width: 100%; background: navy; margin-bottom: 10px;" }
+            = image_tag "industria/laudo.jpg", :alt => "Laudos", :class => "framed"
             %p Relatório técnico de avaliação do desempenho acústico in situ (em campo) de sistemas construtivos, por meio de medições acústicas em fachadas, compartimentações verticais, pisos, equipamentos dentre outros.
             = link_to "Saiba Mais", root_path, :class => "btn btn-primary btn-small"

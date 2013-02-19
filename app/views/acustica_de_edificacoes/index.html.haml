@@ -17,7 +17,7 @@
             = link_to "entre em contato", contact_path
             e solicite uma proposta para os serviços abaixo de acordo com a necessidade da sua edificação.
         .span6
-          %div{ :style => "height: 250px; width: 100%; background: brown;" }
+          = image_tag "acustica/acustica-de-edificacoes.jpg", :alt => "Acústica de Edificações", :class => "framed"
 .block-wide
   .container
     .row
@@ -27,7 +27,7 @@
             %h2
               %i.icon-headphones
               Projetos
-            %div{ :style => "height: 100px; width: 100%; background: lightgreen; margin-bottom: 10px;" }
+            = image_tag "acustica/projetos.jpg", :alt => "Projetos", :class => "framed"
             %p
               Para uma edificação atingir um desempenho acústico bem sucedido, o
               %strong Projeto Acústico
@@ -39,13 +39,13 @@
             %h2
               %i.icon-user
               Consultoria
-            %div{ :style => "height: 100px; width: 100%; background: darkred; margin-bottom: 10px;" }
+            = image_tag "acustica/consultoria.jpg", :alt => "Consultoria", :class => "framed"
             %p Estudo, diagnóstico e orientação das soluções acústicas aplicáveis para uma edificação, visando a otimização de recursos investidos por construtores, incorporadores etc.
             = link_to "Saiba Mais", acustica_de_edificacoes_consultoria_path, :class => "btn btn-primary btn-small"
           .span4
             %h2
               %i.icon-bar-chart
               Laudos
-            %div{ :style => "height: 100px; width: 100%; background: navy; margin-bottom: 10px;" }
+            = image_tag "acustica/laudo.jpg", :alt => "Laudos", :class => "framed"
             %p Relatório técnico de avaliação do desempenho acústico in situ (em campo) de sistemas construtivos, por meio de medições acústicas em fachadas, compartimentações verticais, pisos, equipamentos dentre outros.
             = link_to "Saiba Mais", acustica_de_edificacoes_laudos_path, :class => "btn btn-primary btn-small"
