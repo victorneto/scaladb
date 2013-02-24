@@ -5,7 +5,7 @@
         .span7.offset5
           .hero-unit.hero-header
             %h1 Scala dB Acústica
-            %p.lead Consultoria e assessoria em acústica de edificações.
+            %p.lead Projeto, consultoria e laudos.
             = link_to "Saiba Mais", empresa_path, :class => "btn btn-primary btn-large"
 
 .block-wide
@@ -16,21 +16,15 @@
           .span4
             %h2
               %i.icon-building
-              Acústica de Edificações
-            = image_tag "home/acustica-de-edificacoes.jpg", :alt => "Acústica de Edificações", :class => "framed"
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            = link_to "Saiba Mais", acustica_de_edificacoes_path, :class => "btn btn-primary btn-small"
+              = link_to "Acústica de Edificações", acustica_de_edificacoes_path
+            = link_to image_tag("home/acustica-de-edificacoes.jpg", :alt => "Acústica de Edificações", :class => "framed"), acustica_de_edificacoes_path
           .span4
             %h2
               %i.icon-beaker
-              Indústria
-            = image_tag "home/industria.jpg", :alt => "Indústria", :class => "framed"
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            = link_to "Saiba Mais", industrias_path, :class => "btn btn-primary btn-small"
+              = link_to "Indústria", industrias_path
+            = link_to image_tag("home/industria.jpg", :alt => "Indústria", :class => "framed"), industrias_path
           .span4
             %h2
               %i.icon-leaf
-              Meio Ambiente
-            = image_tag "home/meio-ambiente.jpg", :alt => "Meio Ambiente", :class => "framed"
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            = link_to "Saiba Mais", meio_ambientes_path, :class => "btn btn-primary btn-small"
+              = link_to "Meio Ambiente", meio_ambientes_path
+            = link_to image_tag("home/meio-ambiente.jpg", :alt => "Meio Ambiente", :class => "framed"), meio_ambientes_path
