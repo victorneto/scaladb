@@ -6,22 +6,13 @@
       %h1 Meio Ambiente
 
 .container
-  .row
-    .span12
-      .row-fluid
-        .span6
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        .span6
-          = image_tag "meio-ambiente/meio-ambiente.jpg", :alt => "Meio Ambiente", :class => "framed"
-.block-wide
-  .container
-    .row
-      .span12
-        .row-fluid
-          .span4
-            %h2
-              %i.icon-bar-chart
-              Laudos
-            = image_tag "meio-ambiente/laudo.jpg", :alt => "Laudos", :class => "framed"
-            %p Relatório técnico de avaliação do desempenho acústico in situ (em campo) de sistemas construtivos, por meio de medições acústicas em fachadas, compartimentações verticais, pisos, equipamentos dentre outros.
-            = link_to "Saiba Mais", root_path, :class => "btn btn-primary btn-small"
+  .row-fluid
+    .span4
+      %h2
+        %i.icon-bar-chart
+        Laudos
+      %p Relatório técnico de avaliação do desempenho acústico in situ (em campo) de sistemas construtivos, por meio de medições acústicas em fachadas, compartimentações verticais, pisos, equipamentos dentre outros.
+      = link_to "Saiba Mais", root_path, :class => "btn btn-primary btn-small"
+    .span4
+      = image_tag "meio-ambiente/laudo.jpg", :alt => "Laudos", :class => "framed"
+      
