@@ -7,7 +7,7 @@ header {
   color: white;
   .hero-unit {
     margin-bottom: 0px;
-    padding: 20px 40px 30px 40px;
+    padding: 10px 40px 20px 40px;
     background: black;
     @include translucent-background(black, 0.7);
   }
