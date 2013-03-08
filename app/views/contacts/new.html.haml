@@ -7,17 +7,19 @@
 
 .container
   .row
-    .span12
+    .span8
       .row-fluid
         %h2 Conheça nossas soluções, tire dúvidas e saiba mais
         = simple_form_for @contact, :url => contacts_path, :html => {:class => "form-inline"} do |f|
-          = f.error_notification
           .row-fluid
-            = f.input :name, :label => "Nome", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span6" }
+            .span8
+              = f.error_notification
           .row-fluid
-            = f.input :email, :label => "Email", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span3" }
-            = f.input :phone, :label => "Telefone", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span3" }
+            = f.input :name, :label => "Nome", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }
           .row-fluid
-            = f.input :message, :label => "Mensagem", :as => :text, :input_html => { :class => "span12", :rows => 4 }, :wrapper_html => { :class => "span6" }
+            = f.input :email, :label => "Email", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+            = f.input :phone, :label => "Telefone", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+          .row-fluid
+            = f.input :message, :label => "Mensagem", :as => :text, :input_html => { :class => "span12", :rows => 4 }, :wrapper_html => { :class => "span8" }
           .row-fluid
             = f.button :submit, :value => "Enviar Mensagem", :class => "btn-primary"
