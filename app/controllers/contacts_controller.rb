@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  before_filter :load_options
 
   def new
     @contact = Contact.new
@@ -12,6 +13,14 @@ class ContactsController < ApplicationController
     else
       render "new"
     end
+  end
+
+  private
+
+  def load_options
+    @area_options = Contact.area_options
+    @service_type_options = Contact.service_type_options
+    @state_options = Contact.state_options
   end
 
 end

@@ -1,12 +1,27 @@
 %h1{ :style => "font-size: 23px; color: #333333;" } Contato Site Scala dB
-%p{ :style => "font-size: 13px; color: #333333;" }
+%p
   %strong Nome:
   = @contact.name
+%p
+  %strong Empresa:
+  = @contact.company
 %p
   %strong Email:
   = @contact.email
 %p
   %strong Telefone:
   = @contact.phone
+%p
+  %strong Cidade:
+  = @contact.city
+%p
+  %strong Estado:
+  = @contact.state
+%p
+  %strong Área:
+  = @contact.area
+%p
+  %strong Tipo de Serviço:
+  = @contact.service_type
 %p{ :style => "font-size: 16px; color: #333333; font-weight: bold;" } Mensagem
 %p{ :style => "font-size: 13px; color: #333333;" }= @contact.message

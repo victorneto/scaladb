@@ -10,15 +10,25 @@
     .span8
       .row-fluid
         %h2 Conheça nossas soluções, tire dúvidas e saiba mais
-        = simple_form_for @contact, :url => contacts_path, :html => {:class => "form-inline"} do |f|
+        = simple_form_for @contact, :url => contacts_path, :html => { :class => "form-inline", :multipart => true } do |f|
           .row-fluid
             .span8
               = f.error_notification
           .row-fluid
             = f.input :name, :label => "Nome", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }
           .row-fluid
+            = f.input :company, :label => "Empresa", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }            
+          .row-fluid
             = f.input :email, :label => "Email", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
             = f.input :phone, :label => "Telefone", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+          .row-fluid
+            = f.input :city, :label => "Cidade", :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+            = f.input :state, :label => "Estado", :collection => @state_options, :include_blank => true, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+          .row-fluid
+            = f.input :area, :label => "Área", :collection => @area_options, :include_blank => true, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+            = f.input :service_type, :label => "Tipo de Serviço", :collection => @service_type_options, :include_blank => true, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+          .row-fluid
+            = f.input :file, :label => "Projeto/Documento", :as => :file, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }
           .row-fluid
             = f.input :message, :label => "Mensagem", :as => :text, :input_html => { :class => "span12", :rows => 4 }, :wrapper_html => { :class => "span8" }
           .row-fluid
