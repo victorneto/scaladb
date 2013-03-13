@@ -27,8 +27,15 @@
           .row-fluid
             = f.input :area, :label => "Área", :collection => @area_options, :include_blank => true, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
             = f.input :service_type, :label => "Tipo de Serviço", :collection => @service_type_options, :include_blank => true, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span4" }
+          %hr
+          %p Anexe um ou mais arquivos para orçamento:
           .row-fluid
-            = f.input :file, :label => "Projeto/Documento", :as => :file, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }
+            = f.input :file, :label => false, :as => :file, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }
+          .row-fluid
+            = f.input :file2, :label => false, :as => :file, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }
+          .row-fluid
+            = f.input :file3, :label => false, :as => :file, :input_html => { :class => "span12" }, :wrapper_html => { :class => "span8" }
+          %hr
           .row-fluid
             = f.input :message, :label => "Mensagem", :as => :text, :input_html => { :class => "span12", :rows => 4 }, :wrapper_html => { :class => "span8" }
           .row-fluid

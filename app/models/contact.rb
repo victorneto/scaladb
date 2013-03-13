@@ -5,7 +5,7 @@ class Contact
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :company, :email, :phone, :message, :city, :state, :area, :service_type, :file
+  attr_accessor :name, :company, :email, :phone, :message, :city, :state, :area, :service_type, :file, :file2, :file3
 
   validates_presence_of :name, :company, :email, :phone, :city, :state, :message
   validates_format_of :email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
