@@ -12,6 +12,7 @@ ScaladbComBr::Application.routes.draw do
   get "industria/consultoria" => "industrias#consultoria", :as => "industrias_consultoria"
   get "industria/laudos" => "industrias#laudos", :as => "industrias_laudos"
   get "meio-ambiente" => "meio_ambientes#index", :as => "meio_ambientes"
+  get "meio-ambiente/laudos" => "meio_ambientes#laudos", :as => "meio_ambientes_laudos"
 
   get "contato" => "contacts#new", :as => "contact"
   resources :contacts, :only => [:create], :path => "contato/enviar"
