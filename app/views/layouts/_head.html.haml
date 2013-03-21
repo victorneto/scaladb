@@ -11,3 +11,5 @@
 /[if IE 7]
   = stylesheet_link_tag "ie7", :media => "all"
 = csrf_meta_tags
+=# favicon_link_tag "favicon.ico"
+= render "layouts/google_analytics" if Rails.env.production?
