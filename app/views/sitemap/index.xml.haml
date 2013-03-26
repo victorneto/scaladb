@@ -1,0 +1,8 @@
+- base_url = "http://#{request.host_with_port}"
+!!! XML
+%urlset{:xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9", :'xmlns:image' => "http://www.google.com/schemas/sitemap-image/1.1"}
+
+  - @static_pages.sort_by { |p| p[:updated_at] }.reverse.each do |page|
+    %url
+      %loc #{page[:url]}
+      %lastmod #{page[:updated_at].xmlschema}

@@ -1,6 +1,7 @@
 ScaladbComBr::Application.routes.draw do
 
   root :to => "pages#index"
+  get "sitemap", :to => "sitemap#index"
 
   get "empresa" => "pages#empresa", :as => "empresa"
   get "acustica-de-edificacoes" => "acustica_de_edificacoes#index", :as => "acustica_de_edificacoes"
