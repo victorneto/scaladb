@@ -10,12 +10,12 @@
     .span4
       %h2
         %i.icon-bar-chart
-        Laudos
+        = link_to "Laudos", meio_ambientes_laudos_path
       %p
         Relatório Técnico de avaliação do desempenho acústico
         %em in situ
         (em campo), por meio de medições acústicas segundo normas e com equipamentos normatizados.
       = link_to "Saiba Mais", meio_ambientes_laudos_path, :class => "btn btn-primary btn-small"
     .span4
-      = image_tag "meio-ambiente/laudo.jpg", :alt => "Laudos", :class => "framed"
+      = link_to image_tag("meio-ambiente/laudo.jpg", :alt => "Laudos", :class => "framed"), meio_ambientes_laudos_path
       

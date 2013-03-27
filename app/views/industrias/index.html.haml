@@ -10,8 +10,8 @@
     .span4
       %h2
         %i.icon-headphones
-        Projetos
-      = image_tag "industria/projetos.jpg", :alt => "Projetos", :class => "framed"
+        = link_to "Projetos", industrias_projetos_path
+      = link_to image_tag("industria/projetos.jpg", :alt => "Projetos", :class => "framed"), industrias_projetos_path
       %p
         Para uma planta industrial se adequar as normas vigentes relacionadas ao controle de ruído, vê-se a necessidade de um
         %strong Projeto Acústico.
@@ -20,15 +20,15 @@
     .span4
       %h2
         %i.icon-user
-        Consultoria
-      = image_tag "industria/consultoria.jpg", :alt => "Consultoria", :class => "framed"
+        = link_to "Consultoria", industrias_consultoria_path
+      = link_to image_tag("industria/consultoria.jpg", :alt => "Consultoria", :class => "framed"), industrias_consultoria_path
       %p Estudo, diagnóstico e orientação das soluções aplicáveis na Indústria, visando a otimização de recursos atendendo as exigências ou normas vigentes.
       = link_to "Saiba Mais", industrias_consultoria_path, :class => "btn btn-primary btn-small"
     .span4
       %h2
         %i.icon-bar-chart
-        Laudos
-      = image_tag "industria/laudo.jpg", :alt => "Laudos", :class => "framed"
+        = link_to "Laudos", industrias_laudos_path
+      = link_to image_tag("industria/laudo.jpg", :alt => "Laudos", :class => "framed"), industrias_laudos_path
       %p
         Relatório Técnico de avaliação do desempenho acústico
         %em in situ

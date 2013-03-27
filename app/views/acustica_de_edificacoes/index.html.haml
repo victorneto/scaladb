@@ -26,8 +26,8 @@
           .span4
             %h2
               %i.icon-headphones
-              Projetos
-            = image_tag "acustica/projetos.jpg", :alt => "Projetos", :class => "framed"
+              = link_to "Projetos", acustica_de_edificacoes_projetos_path
+            = link_to image_tag("acustica/projetos.jpg", :alt => "Projetos", :class => "framed"), acustica_de_edificacoes_projetos_path
             %p
               Para uma edificação atingir um desempenho acústico bem sucedido, o
               %strong Projeto Acústico
@@ -38,14 +38,14 @@
           .span4
             %h2
               %i.icon-user
-              Consultoria
-            = image_tag "acustica/consultoria.jpg", :alt => "Consultoria", :class => "framed"
+              = link_to "Consultoria", acustica_de_edificacoes_consultoria_path
+            = link_to image_tag("acustica/consultoria.jpg", :alt => "Consultoria", :class => "framed"), acustica_de_edificacoes_consultoria_path
             %p Estudo, diagnóstico e orientação das soluções acústicas aplicáveis para uma edificação, visando a otimização de recursos investidos por construtores, incorporadores etc.
             = link_to "Saiba Mais", acustica_de_edificacoes_consultoria_path, :class => "btn btn-primary btn-small"
           .span4
             %h2
               %i.icon-bar-chart
-              Laudos
-            = image_tag "acustica/laudo.jpg", :alt => "Laudos", :class => "framed"
+              = link_to "Laudos", acustica_de_edificacoes_laudos_path
+            = link_to image_tag("acustica/laudo.jpg", :alt => "Laudos", :class => "framed"), acustica_de_edificacoes_laudos_path
             %p Relatório técnico de avaliação do desempenho acústico in situ (em campo) de sistemas construtivos, por meio de medições acústicas em fachadas, compartimentações verticais, pisos, equipamentos dentre outros.
             = link_to "Saiba Mais", acustica_de_edificacoes_laudos_path, :class => "btn btn-primary btn-small"
