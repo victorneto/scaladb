@@ -2,7 +2,7 @@
   .container
     %hr
     .row
-      .span9
+      .span8
         %ul.nav.nav-pills
           %li= link_to "Home", root_path
           %li= link_to "Empresa", empresa_path
@@ -11,6 +11,9 @@
           %li= link_to "Meio Ambiente", meio_ambientes_path
           %li= link_to "Equipamentos", root_path
           %li= link_to "Contato", contact_path
-      .span3
+      .span4
         %p.pull-right
-          %small Copyright &copy; #{Date.today.year} Scala dB Acústica
+          %small
+            Copyright &copy; #{Date.today.year} Scala dB Acústica
+            %br
+            Rua Siderópolis, 254, apto 301, Itoupava Norte - Blumenau, SC
