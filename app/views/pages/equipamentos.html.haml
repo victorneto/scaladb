@@ -1,0 +1,20 @@
+- content_for :title do
+  Equipamentos | Scala dB Acústica
+- content_for :header do
+  %header
+    .container
+      %h1 Equipamentos
+
+.container
+  .row-fluid
+    .span5
+      %h2
+        %i.icon-bar-chart
+        Tapping Machine
+      %p Máquina de impactos modelo CalpestONE, marca 01dB, padronizada para ensaios ISO 140 e ISO 10140.
+      = image_tag "equipamentos/tapping-machine.jpg", :alt => "Tapping Machine", :class => "framed"
+    .span5
+      %h2
+        %i.icon-bar-chart
+        Decibelímetro
+      = image_tag "equipamentos/decibelimetro.jpg", :alt => "Decibelímetro", :class => "framed"
