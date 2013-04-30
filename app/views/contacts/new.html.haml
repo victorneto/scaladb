@@ -10,6 +10,11 @@
     .span8
       .row-fluid
         %h2 Conheça nossas soluções, tire dúvidas e saiba mais
+        %p
+          Utilize o formulário abaixo para entrar em contato conosco, informar suas dúvidas e/ou detalhes de seu projeto. Ou se preferir, você pode entrar em contato através do telefone
+          %strong (47) 3036-5452
+          ou email
+          = mail_to "contato@scaladb.com.br", "contato@scaladb.com.br."
         = simple_form_for @contact, :url => contacts_path, :html => { :class => "form-inline", :multipart => true } do |f|
           .row-fluid
             .span8
