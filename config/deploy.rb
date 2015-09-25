@@ -4,7 +4,7 @@ set :ip_address , "50.57.225.42"
 
 # GIT SETTINGS
 set :scm, :git
-set :repository,  "git@github.com:pedroassumpcao/scaladb.git"
+set :repository,  "git@github.com:victorneto/scaladb.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
 
